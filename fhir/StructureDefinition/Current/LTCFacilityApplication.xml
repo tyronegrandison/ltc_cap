@@ -24,7 +24,7 @@
  <veteran value="[boolean]" /><!-- 0..1 Whether the prospective resident is a veteran -->
  <bringPets value="[boolean]" /><!-- 0..1 Whether the prospective resident will be bringing pets -->
  <ownCar value="[boolean]" /><!-- 0..1 Whether the prospective resident owns a car -->
- <driveRegularly value="[boolean]" /><!-- 0..1 Whether the prospective resident drives regualrly -->
+ <driveRegularly value="[boolean]" /><!-- 0..1 Whether the prospective resident drives regularly -->
  <intendsToMaintainCar value="[boolean]" /><!-- 0..1 Whether the prospective resident intends to maintain a car -->
  <reasonableAccommodation value="[boolean]" /><!-- 0..1 Whether the prospective resident is in need of a reasonable accommodation for a disability, e.g. an apartment feature that helps with a hearing, mobility or vision impairment -->
  <motorizedDevice value="[boolean]" /><!-- 0..1 Whether the prospective resident has an electric wheelchair, motorized cart or similar motorized device -->

@@ -1,0 +1,146 @@
+description: Application details for a prospective resident to a long term care facility.
+kind: resource
+elements:
+  id:
+    description: Logical id of this artifact
+    type: id
+  meta:
+    description: Metadata about the resource
+    type: Meta
+  language:
+    description: Language of the resource content
+    type: code
+  text:
+    description: Text summary of the resource, for human interpretation
+    type: Narrative
+  identifier: #[]
+    collection: true
+    required: true
+    description: An identifier for this facility application
+    type: Identifier
+  ltcFacility: #[]
+    collection: true
+    required: true
+    description: The LTC Facility being applied to
+    type: Reference
+  resident: #[]
+    collection: true
+    required: true
+    description: The person who is applying to this LTC Facility ('the prospective resident')
+    type: Reference
+  familyMember: #[]
+    collection: true
+    description: Family member of the prospective resident
+    type: Reference
+  housingPreference: #[]
+    collection: true
+    description: studio | one-bedroom | two-beedroom | shared
+    type: CodeableConcept
+  desiredCareLevel: #[]
+    collection: true
+    required: true
+    description: independent-living | assisted-living | skilled-nursing | memory-care
+    type: CodeableConcept
+  insurance: #[]
+    collection: true
+    required: true
+    description: The insurance coverage details for the prospective resident
+    type: Reference
+  careProvider: #[]
+    collection: true
+    description: The care provider for the prospective resident
+    type: Reference
+  careTeam: #[]
+    collection: true
+    description: The care team for the prospective resident
+    type: Reference
+  carePlan: #[]
+    collection: true
+    description: The care plan for the prospective resident
+    type: Reference
+  preferredHospital: #[]
+    collection: true
+    description: The preferred hospital for the prospective resident
+    type: Reference
+  cognitiveStatus: #[]
+    collection: true
+    required: true
+    description: The cognitive status test results for the prospective resident
+    type: Reference
+  functionalStatus: #[]
+    collection: true
+    required: true
+    description: The functional status test results for the prospective resident
+    type: Reference
+  advanceDirectives: #[]
+    collection: true
+    required: true
+    description: The advance directives for the prospective resident
+    type: Reference
+  hospitalizations: #[]
+    collection: true
+    description: The past hospitalizations for the prospective resident
+    type: Reference
+  currentAllergies: #[]
+    collection: true
+    description: The current allergy for the prospective resident
+    type: Reference
+  currentConditions: #[]
+    collection: true
+    description: The current medical and SDH conditions for the prospective resident
+    type: Reference
+  currentMedications: #[]
+    collection: true
+    description: The current medications for the prospective resident
+    type: Reference
+  dietaryPreferences: #[]
+    collection: true
+    description: The dietary preferences for the prospective resident
+    type: Reference
+  powerofAttorney: #[]
+    collection: true
+    description: Power of attorney for the prospective resident
+    type: Reference
+  veteran:
+    description: Whether the prospective resident is a veteran
+    type: boolean
+  bringPets:
+    description: Whether the prospective resident will be bringing pets
+    type: boolean
+  ownCar:
+    description: Whether the prospective resident owns a car
+    type: boolean
+  driveRegularly:
+    description: Whether the prospective resident drives regularly
+    type: boolean
+  intendsToMaintainCar:
+    description: Whether the prospective resident intends to maintain a car
+    type: boolean
+  reasonableAccommodation:
+    description: Whether the prospective resident is in need of a reasonable accommodation for a disability, e.g. an apartment feature that helps with a hearing, mobility or vision impairment
+    type: boolean
+  motorizedDevice:
+    description: Whether the prospective resident has an electric wheelchair, motorized cart or similar motorized device
+    type: boolean
+  historyOfIntellectualDisability:
+    description: Whether the prospective resident has a history of intellectual or developmental disability issues
+    type: boolean
+  historyOfMentalHealth:
+    description: Whether the prospective resident has a history of mental health issues
+    type: boolean
+  historyOfSubstanceAbuse:
+    description: Whether the prospective resident has a history of substance abuse
+    type: boolean
+  needsInterpretor:
+    description: Whether the prospective resident is in need of interpretive services
+    type: boolean
+  helpWithMedications:
+    description: hether the prospective resident require assistance to administer medication
+    type: boolean
+  registeredOffender:
+    description: Whether the prospective resident is subject to a lifetime registration requirement under a state or federal sexual offender registration program
+    type: boolean
+  personalReference: #[]
+    collection: true
+    description: Personal reference for the prospective resident
+    type: Reference

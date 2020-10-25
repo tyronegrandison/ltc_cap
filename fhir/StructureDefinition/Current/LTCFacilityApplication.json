@@ -7,7 +7,7 @@
   "resident" : { Reference(Patient) }, // The person who is applying to this LTC Facility ('the prospective resident')
   "familyMember" : { Reference(RelatedPerson) }, // Family member of the prospective resident
   "housingPreference" : { CodeableConcept }, // Housing Preference for the prospective resident, e.g. studio, one-bedroom, two-beedroom, shared
-  "desiredCareLevel" : { CodeableConcept }, // Desired Care Level for the prospective resident, e.g. independent living, assisted living, skilled nursing, memory care
+  "desiredCareLevel" : { CodeableConcept }, // Desired Care Level for the prospective resident, e.g. independent-living, assisted-living, skilled-nursing, memory-care
   "insurance" : { Reference(Coverage) }, // The insurance coverage details for the prospective resident
   "careProvider" : { Reference(Practitioner) }, // The care provider for the prospective resident
   "careTeam" : { Reference(CareTeam) }, // The care team for the prospective resident

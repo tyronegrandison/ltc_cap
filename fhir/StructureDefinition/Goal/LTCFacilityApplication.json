@@ -28,7 +28,7 @@
   "pets" : { Reference(Animal) }, // Details on the prospective resident's pet
   "ownCar" : <boolean>, // Whether the prospective resident owns a car
   "driveReguarly" : <boolean>, // Whether the prospective resident drives regualrly
-  "intendsToManintainCar" : <boolean>, // Whether the prospective resident intends to maintain a car
+  "intendsToMaintainCar" : <boolean>, // Whether the prospective resident intends to maintain a car
   "reasonableAccommodation" : <boolean>, // Whether the prospective resident is in need of a reasonable accommodation for a disability, e.g. an apartment feature that helps with a hearing, mobility or vision impairment
   "motorizedDevice" : <boolean>, // Whether the prospective resident has an electric wheelchair, motorized cart or similar motorized device
   "historyOfIntellectualDisability" : <boolean>, // Whether the prospective resident has a history of intellectual or developmental disability issues

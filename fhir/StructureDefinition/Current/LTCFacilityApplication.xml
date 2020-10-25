@@ -2,7 +2,7 @@
  <!-- from Resource: id, meta, implicitRules, and language -->
  <!-- from DomainResource: text, contained, extension, and modifierExtension -->
  <identifier /><!-- 1..* Identifier An identifier for this facility application -->
- <ltcFacility /><!-- 1..* Reference(Organization) The LTC Facility being applied to ltcFacility -->
+ <ltcFacility /><!-- 1..* Reference(Organization) The LTC Facility being applied to -->
  <resident /><!-- 1..* Reference(Patient) The person who is applying to this LTC Facility ('the prospective resident') -->
  <familyMember /><!-- 0..* Reference(RelatedPerson) Family member of the prospective resident -->
  <housingPreference value="[code]" /><!-- 0..* studio | one-bedroom | two-beedroom | shared -->

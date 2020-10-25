@@ -1,40 +1,40 @@
 <LTCFacilityApplication xmlns="http://hl7.org/fhir">
  <!-- from Resource: id, meta, implicitRules, and language -->
  <!-- from DomainResource: text, contained, extension, and modifierExtension -->
- <identifier><!-- 1..* Identifier An identifier for this facility application --></identifier>
- <ltcFacility><!-- 1..* Reference(Organization) The LTC Facility being applied to ltcFacility --></ltcFacility>
- <resident><!-- 1..* Reference(Patient) The person who is applying to this LTC Facility ('the prospective resident') --></resident>
- <familyMember><!-- 0..* Reference(RelatedPerson) Family member of the prospective resident --></familyMember>
- <housingPreference value="[code]"><!-- 0..* studio | one-bedroom | two-beedroom | shared --></housingPreference>
- <desiredCareLevel value="[code]"><!-- 1..* independent-living | assisted-living | skilled-nursing | memory-care --></desiredCareLevel>
- <insurance><!-- 1..* Reference(Coverage) The insurance coverage details for the prospective resident --></insurance>
- <careProvider><!-- 0..* Reference(Practitioner) The care provider for the prospective resident --></careProvider>
- <careTeam><!-- 0..* Reference(CareTeam) The care team for the prospective resident --></careTeam>
- <carePlan><!-- 0..* Reference(CarePlan) The care plan for the prospective resident --></carePlan>
- <preferredHospital><!-- 0..* Reference(Organization) The preferred hospital for the prospective resident --></preferredHospital>
- <cognitiveStatus><!-- 1..* Reference(Observation) The cognitive status test results for the prospective resident --></cognitiveStatus>
- <functionalStatus><!-- 1..* Reference(Observation) The functional status test results for the prospective resident --></functionalStatus>
- <advanceDirective><!-- 1..* Reference(Person) The advance directives for the prospective resident --></advanceDirective>
- <hospitalizations><!-- 0..* Reference(Encounter|Procedure) The past hospitalizations for the prospective resident --></hospitalizations>
- <currentAllergies><!-- 0..* Reference(AllergyIntolerance) The current allergy for the prospective resident --></currentAllergies>
- <currentConditions><!-- 0..* Reference(Conditions|QuestionnaireResponse) The current medical and SDH conditions for the prospective resident --></currentConditions>
- <currentMedications><!-- 0..* Reference(Medication) The current medications for the prospective resident --></currentMedications>
- <dietaryPreferences><!-- 0..* Reference(NurtitionOrder) The dietary preferences for the prospective resident --></dietaryPreferences>
- <powerofAttorney><!-- 1..* Reference(Person) Power of attorney for the prospective resident --></powerofAttorney>
- <veteran value="[boolean]"><!-- 0..1 Whether the prospective resident is a veteran --></veteran>
- <bringPets value="[boolean]"><!-- 0..1 Whether the prospective resident will be bringing pets --></bringPets>
- <ownCar value="[boolean]"><!-- 0..1 Whether the prospective resident owns a car --></ownCar>
- <driveRegularly value="[boolean]"><!-- 0..1 Whether the prospective resident drives regualrly --></driveRegularly>
- <intendsToMaintainCar value="[boolean]"><!-- 0..1 Whether the prospective resident intends to maintain a car --></intendsToMaintainCar>
- <reasonableAccommodation value="[boolean]"><!-- 0..1 Whether the prospective resident is in need of a reasonable accommodation for a disability, e.g. an apartment feature that helps with a hearing, mobility or vision impairment --></reasonableAccommodation>
- <motorizedDevice value="[boolean]"><!-- 0..1 Whether the prospective resident has an electric wheelchair, motorized cart or similar motorized device --></motorizedDevice>
- <historyOfIntellectualDisability value="[boolean]"><!-- 0..1 Whether the prospective resident has a history of intellectual or developmental disability issues --></historyOfIntellectualDisability>
- <historyOfMentalHealth value="[boolean]"><!-- 0..1 Whether the prospective resident has a history of mental health issues --></historyOfMentalHealth>
- <historyOfSubstanceAbuse value="[boolean]"><!-- 0..1 Whether the prospective resident has a history of substance abuse --></historyOfSubstanceAbuse>
- <needsInterpretor value="[boolean]"><!-- 0..1 Whether the prospective resident is in need of interpretive services --></needsInterpretor>
- <helpWithMedications value="[boolean]"><!-- 0..1 Whether the prospective resident require assistance to administer medication --></helpWithMedications>
- <registeredOffender value="[boolean]"><!-- 0..1 Whether the prospective resident is subject to a lifetime registration requirement under a state or federal sexual offender registration program --></registeredOffender>
- <personalReference><!-- 0..* Reference(Person) Personal reference for the prospective resident --></personalReference>  
+ <identifier /><!-- 1..* Identifier An identifier for this facility application -->
+ <ltcFacility /><!-- 1..* Reference(Organization) The LTC Facility being applied to ltcFacility -->
+ <resident /><!-- 1..* Reference(Patient) The person who is applying to this LTC Facility ('the prospective resident') -->
+ <familyMember /><!-- 0..* Reference(RelatedPerson) Family member of the prospective resident -->
+ <housingPreference value="[code]" /><!-- 0..* studio | one-bedroom | two-beedroom | shared -->
+ <desiredCareLevel value="[code]" /><!-- 1..* independent-living | assisted-living | skilled-nursing | memory-care -->
+ <insurance /><!-- 1..* Reference(Coverage) The insurance coverage details for the prospective resident -->
+ <careProvider /><!-- 0..* Reference(Practitioner) The care provider for the prospective resident -->
+ <careTeam /><!-- 0..* Reference(CareTeam) The care team for the prospective resident -->
+ <carePlan /><!-- 0..* Reference(CarePlan) The care plan for the prospective resident -->
+ <preferredHospital /><!-- 0..* Reference(Organization) The preferred hospital for the prospective resident -->
+ <cognitiveStatus /><!-- 1..* Reference(Observation) The cognitive status test results for the prospective resident -->
+ <functionalStatus /><!-- 1..* Reference(Observation) The functional status test results for the prospective resident --> 
+ <advanceDirective /><!-- 1..* Reference(Person) The advance directives for the prospective resident -->
+ <hospitalizations /><!-- 0..* Reference(Encounter|Procedure) The past hospitalizations for the prospective resident -->
+ <currentAllergies /><!-- 0..* Reference(AllergyIntolerance) The current allergy for the prospective resident -->
+ <currentConditions /><!-- 0..* Reference(Conditions|QuestionnaireResponse) The current medical and SDH conditions for the prospective resident -->
+ <currentMedications /><!-- 0..* Reference(Medication) The current medications for the prospective resident -->
+ <dietaryPreferences /><!-- 0..* Reference(NurtitionOrder) The dietary preferences for the prospective resident -->
+ <powerofAttorney /><!-- 1..* Reference(Person) Power of attorney for the prospective resident -->
+ <veteran value="[boolean]" /><!-- 0..1 Whether the prospective resident is a veteran -->
+ <bringPets value="[boolean]" /><!-- 0..1 Whether the prospective resident will be bringing pets -->
+ <ownCar value="[boolean]" /><!-- 0..1 Whether the prospective resident owns a car -->
+ <driveRegularly value="[boolean]" /><!-- 0..1 Whether the prospective resident drives regualrly -->
+ <intendsToMaintainCar value="[boolean]" /><!-- 0..1 Whether the prospective resident intends to maintain a car -->
+ <reasonableAccommodation value="[boolean]" /><!-- 0..1 Whether the prospective resident is in need of a reasonable accommodation for a disability, e.g. an apartment feature that helps with a hearing, mobility or vision impairment -->
+ <motorizedDevice value="[boolean]" /><!-- 0..1 Whether the prospective resident has an electric wheelchair, motorized cart or similar motorized device -->
+ <historyOfIntellectualDisability value="[boolean]" /><!-- 0..1 Whether the prospective resident has a history of intellectual or developmental disability issues -->
+ <historyOfMentalHealth value="[boolean]" /><!-- 0..1 Whether the prospective resident has a history of mental health issues -->
+ <historyOfSubstanceAbuse value="[boolean]" /><!-- 0..1 Whether the prospective resident has a history of substance abuse -->
+ <needsInterpretor value="[boolean]" /><!-- 0..1 Whether the prospective resident is in need of interpretive services -->
+ <helpWithMedications value="[boolean]" /><!-- 0..1 Whether the prospective resident require assistance to administer medication -->
+ <registeredOffender value="[boolean]" /><!-- 0..1 Whether the prospective resident is subject to a lifetime registration requirement under a state or federal sexual offender registration program -->
+ <personalReference /><!-- 0..* Reference(Person) Personal reference for the prospective resident -->  
 </LTCFacilityApplication>
  
  

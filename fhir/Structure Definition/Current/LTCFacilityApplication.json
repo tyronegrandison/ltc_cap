@@ -1,0 +1,43 @@
+{
+  "resourceType" : "LTCFacilityApplication",
+  // from Resource: id, meta, implicitRules, and language
+  // from DomainResource: text, contained, extension, and modifierExtension
+  "identifier" : [{ Identifier }], // An identifier for this facility application
+  "ltcFacility" : { Reference(Organization) }, // The LTC Facility being applied to 
+  "resident" : { Reference(Patient) }, // The person who is applying to this LTC Facility ('the prospective resident')
+  "familyMember" : { Reference(RelatedPerson) }, // Family member of the prospective resident
+  "housingPreference" : { CodeableConcept }, // Housing Preference for the prospective resident, e.g. studio, one-bedroom, two-beedroom, shared
+  "desiredCareLevel" : { CodeableConcept }, // Desired Care Level for the prospective resident, e.g. independent living, assisted living, skilled nursing, memory care
+  "insurance" : { Reference(Coverage) }, // The insurance coverage details for the prospective resident
+  "careProvider" : { Reference(Practitioner) }, // The care provider for the prospective resident
+  "careTeam" : { Reference(CareTeam) }, // The care team for the prospective resident
+  "carePlan": { Reference(CarePlan) }, // The care plan for the prospective resident
+  "preferredHospital" : { Reference(Organization) }, // The preferred hospital for the prospective resident
+  "cognitiveStatus" : { Reference(Observation) }, // The cognitive status test results for the prospective resident
+  "functionalStatus" : { Reference(Observation) }, // The functional status test results for the prospective resident
+  "advanceDirective" : { Reference(Person) }, // The advance directives for the prospective resident
+  "hospitalizations" : { Reference(Encounter|Procedure) }, // The past hospitalizations for the prospective resident
+  "currentAllergies" : {Reference(AllergyIntolerance) }, // The current allergy for the prospective resident
+  "currentConditions" : {Reference(Conditions|QuestionnaireResponse) }, // The current medical and SDH conditions for the prospective resident
+  "currentMedications" : { Reference(Medication) }, // The current medications for the prospective resident
+  // currentImmunizations : { Reference(Immunization) }, // The current immunizations for the prospective resident
+  "dietaryPreferences" : { Reference(NurtitionOrder) }, // The dietary preferences for the prospective resident
+  "powerofAttorney" : { Reference(Person) }, // Power of attorney for the prospective resident
+  "veteran" : <boolean>, // Whether the prospective resident is a veteran
+  "bringPets" : <boolean>, // Whether the prospective resident will be bringing pets
+  // pets : { Reference(Animal) }, // Details on the prospective resident's pet
+  "ownCar" : <boolean>, // Whether the prospective resident owns a car
+  "driveReguarly" : <boolean>, // Whether the prospective resident drives regualrly
+  "intendsToManintainCar" : <boolean>, // Whether the prospective resident intends to maintain a car
+  "reasonableAccommodation" : <boolean>, // Whether the prospective resident is in need of a reasonable accommodation for a disability, e.g. an apartment feature that helps with a hearing, mobility or vision impairment
+  "motorizedDevice" : <boolean>, // Whether the prospective resident has an electric wheelchair, motorized cart or similar motorized device
+  "historyOfIntellectualDisability" : <boolean>, // Whether the prospective resident has a history of intellectual or developmental disability issues
+  "historyOfMentalHealth" : <boolean>, // Whether the prospective resident has a history of mental health issues
+  "historyOfSubstanceAbuse" : <boolean>, // Whether the prospective resident has a history of substance abuse
+  "needsInterpretor" : <boolean>, // Whether the prospective resident is in need of interpretive services
+  "helpWithMedications" : <boolean>, // Whether the prospective resident require assistance to administer medication
+  "registeredOffender" : <boolean>, // Whether the prospective resident is subject to a lifetime registration requirement under a state or federal sexual offender registration program 
+  // usesIllegalDrugs : <boolean>, // Whether the prospective resident is require assistance to administer medication
+  "personalReference" : { Reference(Person) } // Personal reference for the prospective resident  
+}
+ 

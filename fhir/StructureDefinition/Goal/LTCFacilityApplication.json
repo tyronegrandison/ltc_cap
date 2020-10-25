@@ -2,7 +2,7 @@
   "resourceType" : "LTCFacilityApplication",
   // from Resource: id, meta, implicitRules, and language
   // from DomainResource: text, contained, extension, and modifierExtension
-  "identifier" : [{ Identifier }], // An identifier for this facility application
+  "identifier" : { Identifier }, // An identifier for this facility application
   "ltcFacility" : { Reference(Organization) }, // The LTC Facility being applied to 
   "resident" : { Reference(Patient) }, // The person who is applying to this LTC Facility ('the prospective resident')
   "familyMember" : { Reference(RelatedPerson) }, // Family member of the prospective resident

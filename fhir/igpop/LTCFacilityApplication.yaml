@@ -15,16 +15,19 @@ elements:
     type: Narrative
   identifier: #[]
     collection: true
+    minItems: 1
     required: true
     description: An identifier for this facility application
     type: Identifier
   ltcFacility: #[]
     collection: true
+    minItems: 1
     required: true
     description: The LTC Facility being applied to
     type: Reference
   resident: #[]
     collection: true
+    minItems: 1
     required: true
     description: The person who is applying to this LTC Facility ('the prospective resident')
     type: Reference
@@ -38,11 +41,13 @@ elements:
     type: CodeableConcept
   desiredCareLevel: #[]
     collection: true
+    minItems: 1
     required: true
     description: independent-living | assisted-living | skilled-nursing | memory-care
     type: CodeableConcept
   insurance: #[]
     collection: true
+    minItems: 1
     required: true
     description: The insurance coverage details for the prospective resident
     type: Reference
@@ -64,16 +69,19 @@ elements:
     type: Reference
   cognitiveStatus: #[]
     collection: true
+    minItems: 1
     required: true
     description: The cognitive status test results for the prospective resident
     type: Reference
   functionalStatus: #[]
     collection: true
+    minItems: 1
     required: true
     description: The functional status test results for the prospective resident
     type: Reference
   advanceDirectives: #[]
     collection: true
+    minItems: 1
     required: true
     description: The advance directives for the prospective resident
     type: Reference
@@ -99,6 +107,7 @@ elements:
     type: Reference
   powerofAttorney: #[]
     collection: true
+    minItems: 1
     description: Power of attorney for the prospective resident
     type: Reference
   veteran:
